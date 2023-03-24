@@ -91,6 +91,38 @@ ERROR
 3. UPDATE texto SET tipo_varchar = 'Ana Bia Carla Denise' WHERE id_linha = 2;
 ERROR
 
+
+
+
+
+
+-- CRIAR UMA NOVA TABELA: vendas
+1. CREATE TABLE vendas(id_linha int, data date, valor int);
+2. DESCRIBE vendas;
+3. ALTER TABLE vendas MODIFY COLUMN id_linha int NOT NULL;
+4. DESCRIBE vendas;
+5. ALTER TABLE vendas ADD PRIMARY KEY (id_linha);
+6. DESCRIBE vendas;
+7. ALTER TABLE vendas MODIFY COLUMN id_linha int AUTO_INCREMENT;
+8. DESCRIBE vendas;
+
+-- INSERIR DADOS NA TABELA:
+1. INSERT INTO vendas(data,valor) VALUES ('2023-03-24',10);
+2. SELECT * FROM vendas;
+
+3. INSERT INTO vendas(data,valor) VALUES ('2023-03-23',50), ('2023-03-22',3), ('2023-03-21', 60), ('2023-03-20', 32);
+4. SELECT * FROM vendas;
+
+-- BUSCAS PERSONALIZADAS:
+
+CONTAR QUANTIDADE DE OCORRÊNCIAS: COUNT()
+1. SELECT COUNT(id_linha) FROM vendas;
+2. SELECT COUNT(id_linha) FROM vendas WHERE id_linha>3;
+
+ENCONTRAR MÁXIMO e MÍNIMO: MAX(), MIN()
+1. SELECT MAX(valor) FROM vendas;
+2. SELECT MIN(valor) FROM vendas;
+
 -- ADICIONAR UMA NOVA COLUNA 
 1. ALTER TABLE texto ADD tipo_text text;
 2. DESCRIBE texto;
