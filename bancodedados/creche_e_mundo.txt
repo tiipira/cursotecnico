@@ -1,0 +1,77 @@
+-- Importando CSV:
+
+https://github.com/tiipira/cursotecnico
+Banco de Dados:
+
+Clicar em 2021_creche.csv
+Salvar link como
+2021_creche.csv
+
+Botão Direito no arquivo: Abrir com
+Bloco de notas
+ID,Bairro,Dias
+
+show databases;
+use creche;
+show tables;
+select * from 2021_creche;
+select bairro,dias from 2021_creche order by dias desc;
+select bairro,dias from 2021_creche WHERE dias <= 7;
+select count(dias) from 2021_creche WHERE dias <= 7;
+select bairro,dias from 2021_creche WHERE dias >= 20;
+select count(dias) from 2021_creche where dias >= 20;
+
+
+
+
+
+
+-- Usando Script SQL:
+
+https://github.com/tiipira/cursotecnico
+Banco de Dados:
+
+Clicar em mundo.sql
+Copiar o script
+Abrir uma nova query no Workbench (File > New Query Tab)
+Colar o script e executar todas as linhas (1º raio).
+
+show databases;
+
+use world;
+
+select * from city;
+
+select * from country;
+
+select * from countrylanguage;
+
+select name,language from country inner join 
+countrylanguage on country.code = countrylanguage.countrycode;
+
+select name,language from country inner join 
+countrylanguage on country.code = countrylanguage.countrycode 
+where countrylanguage.IsOfficial = 'T';
+
+describe country;
+
+select country.name,city.name 
+from country inner join city  
+on country.capital = city.ID;
+
+select name,population from country
+order by population desc LIMIT 10;
+
+select name,SurfaceArea from country
+order by SurfaceArea desc LIMIT 10;
+
+select city.name,country.name,city.Population 
+from city inner join country
+on city.ID = country.Capital
+ORDER BY city.population DESC LIMIT 10;
+
+select sum(population) from country;
+
+-- Quais os 10 países onde se vive mais?
+select name,lifeexpectancy from country
+order by lifeexpectancy desc limit 10;
