@@ -4,12 +4,14 @@ https://github.com/tiipira/cursotecnico
 Banco de Dados:
 
 Clicar em 2021_creche.csv
-Salvar link como
+Botão direito do mouse > Salvar link como
 2021_creche.csv
 
-Botão Direito no arquivo: Abrir com
-Bloco de notas
-ID,Bairro,Dias
+Ir até a pasta onde foi salvo o arquivo.
+Botão Direito no arquivo > Abrir com > Bloco de notas
+Digitar, na primeira linha: ID,Bairro,Dias
+
+Abrir MySQL Workbench:
 
 show databases;
 use creche;
@@ -25,7 +27,6 @@ select count(dias) from 2021_creche where dias >= 20;
 
 
 
-
 -- Usando Script SQL:
 
 https://github.com/tiipira/cursotecnico
@@ -34,42 +35,55 @@ Banco de Dados:
 Clicar em mundo.sql
 Copiar o script
 Abrir uma nova query no Workbench (File > New Query Tab)
-Colar o script e executar todas as linhas (1º raio).
+Colar o script e executar todas as linhas (1º 'raio').
 
 show databases;
 
+-- Usar banco de dados que foi criado com o script.
 use world;
 
+-- Ver as entradas da tabela 'city':
 select * from city;
 
+-- Ver as entradas da tabela 'country:
 select * from country;
 
+-- Ver as entradas da tabela 'countrylanguage':
 select * from countrylanguage;
 
+
+-- Selecionar as línguas faladas em cada país:
 select name,language from country inner join 
 countrylanguage on country.code = countrylanguage.countrycode;
 
+-- Selecionar apenas línguas oficiais dos países:
 select name,language from country inner join 
 countrylanguage on country.code = countrylanguage.countrycode 
 where countrylanguage.IsOfficial = 'T';
 
+-- Ver como a tabela 'country' foi criada:
 describe country;
 
+-- Quais são os países e suas capitais no mundo?
 select country.name,city.name 
 from country inner join city  
 on country.capital = city.ID;
 
+-- Quais os 10 países mais populosos?
 select name,population from country
 order by population desc LIMIT 10;
 
+-- Quais os 10 maiores países?
 select name,SurfaceArea from country
 order by SurfaceArea desc LIMIT 10;
 
+-- Quais as 10 capitais mais populosas?
 select city.name,country.name,city.Population 
 from city inner join country
 on city.ID = country.Capital
 ORDER BY city.population DESC LIMIT 10;
 
+-- Qual a população mundial?
 select sum(population) from country;
 
 -- Quais os 10 países onde se vive mais?
