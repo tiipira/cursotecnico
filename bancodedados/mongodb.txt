@@ -1,0 +1,39 @@
+## Download do MongoDB Community Server ##
+https://www.mongodb.com/
+ Products > Community Server > Download
+Instalação: completa, com Compass.
+Conexão: salvar localhost:27017 como favorita (salainformatica)
+
+## MongoDB ##
+- não precisa de ponto-e-vírgula;
+- Case Sensitive: 'm' diferente de 'M';
+- 'db' representa o banco de dados em uso.
+
+
+## MONGOSH - Comandos#
+show databases
+use teste
+show collections
+
+// O banco de dados 'teste' e a collection 'ano' só existirão depois que o primeiro document for salvo:
+db.ano.insertOne({id_mes: 1, nome_mes: "Janeiro", dias_mes: 31})
+
+// Encontrar todos os registros:
+db.ano.find()
+db.ano.find().pretty()
+
+// Inserir apenas um registro:
+db.ano.insertOne({id_mes: 2, nome_mes: "Fevereiro", dias_mes: 28})
+db.ano.find()
+
+// Inserir vários registros:
+*** Usar array = vetor / matriz [xx, xx, xx] 
+db.ano.insertMany([{id_mes: 3, nome_mes: "Março", dias_mes: 31},{id_mes: 4, nome_mes: "Abril", dias_mes: 30}])
+db.ano.insertMany([{id_mes: 5, nome_mes: "Maio", dias_mes: 31},{id_mes: 6, nome_mes: "Junho", dias_mes: 30}])
+db.ano.find()
+
+# CRUD com MongoDB #
+C - create	- db.collection.insertOne()
+R - read	  - db.collection.find()
+U - update  -
+D - delete  -
