@@ -32,8 +32,34 @@ db.ano.insertMany([{id_mes: 3, nome_mes: "Março", dias_mes: 31},{id_mes: 4, nom
 db.ano.insertMany([{id_mes: 5, nome_mes: "Maio", dias_mes: 31},{id_mes: 6, nome_mes: "Junho", dias_mes: 30}])
 db.ano.find()
 
+
+
 # CRUD com MongoDB #
-C - create	- db.collection.insertOne()
-R - read	  - db.collection.find()
-U - update  -
-D - delete  -
+C - create	db.collection.insertOne()
+		db.collection.insertMany([])
+
+R - read	db.collection.find()
+		db.collection.find().pretty()
+		db.collection.findOne()
+
+U - update	db.collection.updateOne()
+		db.collection.updateMany([])
+
+D - delete	db.collection.deleteOne()
+		db.collection.deleteMany([])
+  
+  
+## Update ##
+db.ano.updateOne({nome_mes: "Fevereiro"},{$set:{dias_mes: 29}})
+db.ano.updateOne({id_mes: 2},{$set: {nome_mes: "Fevereiro"}})
+
+## Delete ##
+db.ano.deleteOne({id_mes: 1})
+
+## Create ##
+db.ano.insertOne({id_mes: 1, nome_mes: "Janeiro", dias_mes: 31})
+
+## Read ##
+db.ano.find({dias_mes: {$gt: 30}},{nome_mes: 1, dias_mes: 1})
+**** $gt = greater than = maior que
+
