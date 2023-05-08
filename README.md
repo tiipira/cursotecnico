@@ -13,3 +13,7 @@ https://ric.cps.sp.gov.br/bitstream/123456789/7283/1/etiminfonet_2021_2_leticiax
 https://ric.cps.sp.gov.br/bitstream/123456789/7231/1/EnsinoM%C3%A9diocomHabilita%C3%A7%C3%A3oProfissionaldeT%C3%A9cnicoemInform%C3%A1ticaparaInternet_2021_2_Josu%C3%A9FernandesAlves%20_CiberNinja.pdf
 https://ric.cps.sp.gov.br/browse?type=sponsorship&order=ASC&rpp=20&value=Curso+T%C3%A9cnico+em+Inform%C3%A1tica+para+Internet
 
+
+Certificações Grátis:
+Google Analytics: https://skillshop.exceedlms.com//student/path/2928-google-analytics-individual-qualification
+Google Fundamentos de Marketing Digital: https://learndigital.withgoogle.com/ateliedigital/course/digital-marketing
