@@ -22,6 +22,19 @@ https://ric.cps.sp.gov.br/browse?type=sponsorship&order=ASC&rpp=20&value=Curso+T
 
 
 
+Masterclass Exame - Inteligência Artificial aplicada aos negócios (22 a 30/05/2023), online e gratuita.
+
+https://lps.exame.com/lpl-serie-ia-negocios-202305?utm_source=conteudo&utm_medium=carreira&utm_campaign=ia-negocios-202305_lead_5-empresas-que-ja-usam-e-lucram-com-inteligencia-artificial-ha-tempos&utm_term=n/a&utm_content=n/a
+
+
+
+Webinars EBAC - https://ebaconline.com.br/webinars
+
+- "O que esperam de um UX/UI Designer júnior?": dias 16, 17 e 18 de maio de 2023, 19h (concorra a uma bolsa integral).
+https://ebaconline.com.br/webinars/product-workshop-2023-05-16-17-18
+
+
+
 Certificações Grátis:
 
 Google Analytics: https://skillshop.exceedlms.com//student/path/2928-google-analytics-individual-qualification
