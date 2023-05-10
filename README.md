@@ -44,3 +44,5 @@ Google Fundamentos de Marketing Digital: https://learndigital.withgoogle.com/ate
 Dicas (Marketing Digital): https://pt.linkedin.com/pulse/12-certifica%C3%A7%C3%B5es-online-e-gratuitas-que-eu-j%C3%A1-fiz-para-rogerio
 
 Mais Dicas (Marketing Digital e TI): https://www.catho.com.br/carreira-sucesso/aumente-suas-chances-trabalho-com-certificacoes-gratuitas/
+
+Certificação Agile (SCRUM): https://www.scrumstudy.com/portuguese/scrum-fundamentals-certified
