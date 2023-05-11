@@ -37,6 +37,8 @@ https://ebaconline.com.br/webinars/product-workshop-2023-05-16-17-18
 
 Certificações Grátis:
 
+Bootcampinho UI/UX: https://maiane.com.br/bootcampinho-ui-ux-design/
+
 Google Analytics: https://skillshop.exceedlms.com//student/path/2928-google-analytics-individual-qualification
 
 Google Fundamentos de Marketing Digital: https://learndigital.withgoogle.com/ateliedigital/course/digital-marketing
